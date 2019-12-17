@@ -1,15 +1,13 @@
 ---
 title: "About Me"
 author: "Eric C. Anderson"
-output: 
-  word_document:
-    toc: true
-  html_notebook:
-    toc: true
+output:
   html_document:
-    toc: true
+    toc: yes
+  word_document:
+    toc: yes
   pdf_document:
-    toc: true
+    toc: yes
 bibliography: references.bib
 ---
 
@@ -46,7 +44,7 @@ in FWCB.
 When I am not working I love getting out and being active. My top four things
 to do are:
 
-1. Snorkeling in rivers and creeks, backpacking, and hiking with my family,
+1. Snorkeling in rivers and creeks, backpacking, and hiking (all with my family),
 1. Playing hockey (I learned to skate after moving here.  What a blast!),
 1. Biking,
 1. Playing with our pair of awesome, springy cats.  
@@ -54,14 +52,9 @@ to do are:
 Here is a picture of me with daughter Zoe, looking for aquatic invertebrates
 above the CSU Mountain Campus.
 
-```{r me_pic, echo=FALSE, out.width="250px"}
+```{r me_pic, echo=FALSE, out.width="500px"}
 knitr::include_graphics("images/eric.jpg", auto_pdf = TRUE)
 ```
-
-For whatever reason, the out.width argument is not respected by the R Notebook format.
-Whatever.
-
-
 
 
 
@@ -77,7 +70,7 @@ been working on the genetic basis of run timing in Chinook salmon and other salm
 When I was a graduate student, I heard Peter Green speak about
 his work on reversible jump MCMC for the analysis of finite mixture
 models.  One of the problems I was working with at the time was
-estimating propoprtions of salmon from different rivers that were being
+estimating proportions of salmon from different rivers that were being
 caught in the ocean---the mixed stock fishery problem.  I spent a lot
 of time working through @richardson1997bayesian and learned a lot about
 MCMC and RJMCMC in the process.

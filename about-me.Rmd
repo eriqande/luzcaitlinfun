@@ -1,15 +1,13 @@
 ---
 title: "About Me"
 author: "Insert Name Here"
-output: 
-  html_notebook:
-    toc: true
+output:
   html_document:
-    toc: true
-  pdf_document:
-    toc: true
+    toc: yes
   word_document:
-    toc: true
+    toc: yes
+  pdf_document:
+    toc: yes
 bibliography: references.bib
 ---
 
@@ -21,7 +19,7 @@ Briefly tell us a little background about yourself, and how
 you ended up becoming a student at CSU and taking this class.
 Put in a hypertext link to your undergraduate institution.  
 
-Include a numbered list of your top-four favoriate leisure activities, like this:
+Include a numbered list of your top-four favorite leisure activities, like this:
 
 1. My favorite
 1. Second favorite
@@ -69,9 +67,9 @@ you might paste this into `references.bib`.
 Note the string before the comma on the first line.  That is the cite key.
 Once you have done that, you can cite it by including `@richardson1997bayesian`
 if you don't want the name in parenthesis, like, "As @richardson1997bayesian introduced in
-their landmark paper.  On the other hand, you can use `[@richardson1997bayesian]` if
-you do want it all in parentheses, like:  "Reversible jump MCMC has been previously applied
-to the analysis of mixtures [@richardson1997bayesian].
+their landmark paper."  On the other hand, you can use `[@richardson1997bayesian]` if
+you do want it all in parentheses, like, "Reversible jump MCMC has been previously applied
+to the analysis of mixtures [@richardson1997bayesian]."
 
 
 ## The mathematics behind my research

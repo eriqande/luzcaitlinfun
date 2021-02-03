@@ -1,59 +1,44 @@
 ---
 title: "About Me"
-author: "Eric C. Anderson"
+author: "Luz Zamudio"
 output:
-  html_document:
+  pdf_document:
     toc: yes
   word_document:
     toc: yes
-  pdf_document:
+  html_document:
     toc: yes
 bibliography: references.bib
 ---
 
 # Who I am and where I came from
 
-I grew up in a small town in Southern California.  When I was 11 years old,
-I spent five weeks living with a family friend who ran the hyperbaric chamber
-adjacent to the University of Southern California Marine Lab on Catalina Island.
-Days spent snorkeling the kelp beds, keeping intertidal organisms in an aquarium
-I was allowed to fill, and watching researchers tag blue sharks convinced me that
-I wanted to be a marine biologist.  
+I have spent my whole life in Mexico City, where I was born. Until now, my favorite stage of my life was my childhood. I used to spend my time playing with my two older sisters, imitating mom in everything, going with dad to see him playing basketball, and homework ... lot of homework. But one of my favorits was to visit the zoo, that was pretty close to my house. There, I discover my fascination with animals. 
 
-In high school, however, I got into rock climbing and became a little math/physics nerd.
-I went to [Stanford University](https://www.stanford.edu/) planning to major in
-Mathematics, but got super intimidated by all the smart, wonky people in my first
-honors math class.  I took a year-long detour to
-[Prescott College](https://www.prescott.edu/), where I had my first class in evolution
-and wondered why the hell my high-school biology class was not taught in the context
-of evolution.
+## Education
 
-I ended up studying human biology at Stanford, and then went to
-[University of Washington](https://www.washington.edu/) for graduate work. I started
-in Fisheries, but then got involved in genetics research that needed some
-new statistical developments.  Thus, my math nerdiness was resurrected and
-I did my PhD in Quantitative Ecology and Resource Management, focusing on
-the use of Monte Carlo methods for inference from population genetic models.
+I studied elementary, middle and high school in the [IMP](https://www.fundacionmierypesado.org.mx/centros-educativos/instituto/conocenos-2/). When it was time to start the college, I was completely unenthusiastic about it. I felt I was so tired to continue that I did not want to study anything. 
 
-After a two-year postdoc at Berkeley, I started working for the National Marine
-Fisheries Service in Santa Cruz, CA.  I actually did become a marine biologist,
-sort of! I still work for NMFS, but a year and a half
-ago I moved to Fort Collins with Kristen, and have an affiliate position
-in FWCB.
+I ended up studying Engineering in Biochemistry at [TESE](http://www.tese.edu.mx/tese2010/). I graduated with honors, but I was not happy with that degree. So, I talked to a close teacher about my main interests (biology, animals, evolution), and told me about the postgraduate programs at [UNAM](https://www.unam.mx/). I concerted a lot of interviews with researchers there, and finally was accepted in one project about the "Evolution of Hummingbirds" leaded by Dra. Blanca Hernández. That is how I started and completed my masters and PhD studies at the [MZFC](http://mzfcaves.fciencias.unam.mx/05posgrads/index.html#parentVerticalTab3). 
 
-When I am not working I love getting out and being active. My top four things
-to do are:
+But again, at the end of my PhD I was ran out of energy. I look for many posdoctorate options, but I was not lucky. Until last year, I had the priceless opportunity to enroll into the [birdgenoscape project](https://www.birdgenoscape.org/), with a mexican scholarship. It has been challenging but I love it!
 
-1. Snorkeling in rivers and creeks, backpacking, and hiking (all with my family),
-1. Playing hockey (I learned to skate after moving here.  What a blast!),
-1. Biking,
-1. Playing with our pair of awesome, springy cats.  
+## Hobbies
 
-Here is a picture of me with daughter Zoe, looking for aquatic invertebrates
-above the CSU Mountain Campus.
+I am not an expert in any of the following things, but I enjoy: 
 
-```{r me_pic, echo=FALSE, out.width="500px"}
-knitr::include_graphics("images/eric.jpg", auto_pdf = TRUE)
+- Drawing and painting.
+- Swimming.
+- Hiking, climbing, mountanering.
+- Scuba diving.
+- Visiting new places.  
+
+
+In order of apearance: me diving at Cozumel; me and my team at the top of Mt. Iztaccihuatl; visiting Yosemite; climbing at Peña de Bernal.
+
+```{r, echo = FALSE, out.width="50%"}
+myimages<-list.files("images/", pattern = ".jpg", full.names = TRUE)
+knitr::include_graphics(myimages, auto_pdf = TRUE)
 ```
 
 
@@ -61,149 +46,95 @@ knitr::include_graphics("images/eric.jpg", auto_pdf = TRUE)
 
 # Research Interests
 
-I'm interested in all manner of statistical inference from genetic data. Lately I have
-been working on the genetic basis of run timing in Chinook salmon and other salmonids.
-
+I am interested in the study of the forces that promote speciation, in the evolution, systematics and taxonomy of birds, specially hummingbirds. 
 
 ## Influential papers
 
-When I was a graduate student, I heard Peter Green speak about
-his work on reversible jump MCMC for the analysis of finite mixture
-models.  One of the problems I was working with at the time was
-estimating proportions of salmon from different rivers that were being
-caught in the ocean---the mixed stock fishery problem.  I spent a lot
-of time working through @richardson1997bayesian and learned a lot about
-MCMC and RJMCMC in the process.
+The time I was enrolling into my masters, the top study about hummingbirds evolution was leaded by Jimmy McGuire at UC Berkeley. The results in [McGuire et al. (2007)](https://academic.oup.com/sysbio/article/56/5/837/1697782?login=true), showed the most robust phylogeny of Trochilidae family (hummingbirs). But, most of the Mesoamerican species hadn't been included, becoming this one of the main objectives of our lab. We focused on studying the phylogenetic relationships on mexican species, and also to study genetic variation at intraspecific level. 
 
-Later on, much of my work on Bayesian inference of pedigrees from genetic data
-[@anderson2016bayesian] builds upon the idea of factor graphs described by
-@kschischang2001factor.
+During my PhD, I worked on one widely distributed species (from northern Mexico to Costa Rica), previously known as the Magnificent Hummingbird *Eugenes fulgens*. We found that this complex was conformed by at least two independent lineages, and that the populations distributed in Panama and Costa Rica should be considered as different species [(Zamudio-Beltrán and Hernández-Baños, 2015)](https://www.sciencedirect.com/science/article/abs/pii/S1055790315001268). This study was taking into account by the American Ornithological Society (included some other evidences), to split this complex into two species: the Rivoli's Hummingbird *Eugenes fulgens*, and the Talamanca Hummingbird *Eugenes spectabilis* [(AOS 58 supplement, 2017)](https://academic.oup.com/auk/article/134/3/751/5149324). 
 
 ## The mathematics behind my research
 
-I have worked a lot with the coalescent process, so let's put
-down the expected time during which there are $k$ extant lineages
-in a population of size $N$.
-$$
-\mathbb{E}T_k = \frac{4N}{k(k-1)}.
-$$
+Related to the study I talked above, to support the hypothesis that *Eugenes fulgens* complex was conformed by at least two species, I needed to perform an analysis based on coalescence theory, for that I used a BPP approach. This is a Bayesian Markov chain Monte Carlo program for analyzing DNA sequence alignments under the Multispecies coalescent model (MSC) [(Rannala and Yang, 2003)](https://academic.oup.com/genetics/article/164/4/1645/6050371?login=true). 
 
-And, while we are at, let's throw down a description of one of the 
-update steps in the sum-product algorithm for acyclic factor graphs:
+This method estimates the posterior distribution for species delimitation models, assuming different numbers of species. Each putative species is composed by three key parameters: $\theta$ (the product of effective population size $N$ and mutation rate $\mu$ per site), $\tau_A$ (the time at which the species arose) and $\tau_D$ (the time at which the species splits into two descendent species). The joint posterior distribution of species delimitations and species tree is: 
 $$
-\mu_{f_j\longrightarrow v_i}(x_i) =  
-\sum_{x_{C\backslash i} \in \mathcal{X}_{C\backslash i}}
-h_j(x_{C\backslash i}, x_i) \prod_{k\in C\backslash i} \mu_{v_k\longrightarrow f_j}(x_k).
+f(S,\varLambda|D)= \frac{1}{f(D)}f(D|S)f(S|\varLambda)f(\varLambda)
 $$
+where $S$ denotes the species trees (and therefore $\theta$, $\tau_A$, and $\tau_D$), $\Lambda$ denotes the species delimitation models and $D$ represents the multilocus data. 
+
 
 ## My computing experience
 
-I started programming in BASIC on our old Apple IIe in 1983.  In high school
-I implemented a basic program to plot some fractal images.  After that, I didn't really
-do any programming until grad school when I took a course in C.
-Here is some C code that I wrote:
-```c
-	if(RU!=NULL) {
-		RepUnitZSum = (int *)calloc(RU->NumRepUnits,sizeof(int));
-		RepUnitPis = DvalVector(0,RU->NumRepUnits, 0.0, 1.0, .01);
-		RepUnitPofZs = (dval ***)calloc(N,sizeof(dval **));
-		for(i=0;i<N;i++) {
-			RepUnitPofZs[i] = DvalVector(0,RU->NumRepUnits-1,  0.0,1.0,   -1);  /* no histograms for these */
-		}
-		if(BO->PiTraceInterval>0) {
-			repPi_tracef = OpenTraceFile("rep_unit_pi_trace.txt", "trace file of reporting unit Pi values from gsi_sim.", Baselines, BO, RU, BO->PiTraceInterval);
-		}
-		if(BO->ZSumTraceInterval>0) {
-			repZSumtracef = OpenTraceFile("rep_unit_zsum_trace.txt", "trace file of reporting unit ZSum values from gsi_sim.", Baselines, BO, RU, BO->ZSumTraceInterval);
-		}
-	}
-```
-Wow! That is pretty ugly.  
+My experience in programming is limited. I started with basic commands in linux when I started performing Bayesian analysis for phylogenetics inferences during the masters. Two years ago, I attended to a workshop about reproducibility and bioinformatics, this was a great course, but as I had no data to analyze I couldn't take too much advantage of this.  
 
-When I was a postdoc, John Novembre and the other members of Monty Slatkin's lab at
-Berkeley got me hooked on using the Unix shell, programming in bash, and
-writing short scripts in awk and sed. Here is a little awk script that takes the
-output of SGE's `qacct` command and makes a nice, tidy table of it
+In that workshop we did some basic things like downloading some genetic data like this: 
+
 ```sh
-#! /usr/bin/awk -f
+#!/bin/bash
 
-# an awk script. 
-# it expects the output of qacct like this:
-# qacct -o eriq -b 09271925  -j ml
+# Create working directory
+mkdir -p AMINOACIDOS
+cd AMINOACIDOS
 
-# make it executable and run it like this:
-# qacct -o eriq -b 09271925  -j ml | tidy-qacct
+# Download three sequences from the same protein from different species 
+for i in YP_009342035.1 AIM45247.1 ADL09111.1; do
+curl -p 
+"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&rettype=fasta&id=$i" > 
+ej_proteina$i.fas
+grep -oE ">\w+.." ej_proteina$i.fas >> out_aminoacidos.txt
 
-
-# if you pass it a job number that was not one of your jobs it 
-# just skips the error message that comes up.  
-
-# note that the output of qacct is space delimited
-
-
-/^==========/ {++n; next}  # increment run counter, then skip these lines
-/^error:/ {next}  # skip it if you told it to get a wrong job number
-
-# now, every data line it gets things.  It compiles the header 
-# all the way through, in case some reports have more columns...
-NF > 1 {
-  tag = $1;
-  if(!(tag in header_vals)) {
-    header[++h] = tag;
-    header_vals[tag]++;
-  }
-  $1 = "";  # remove the tag from the full line of stuff
-  values[n, tag] = $0;  # assign the values to the tag
-  
-}
-
-# at the end of it all, we print the header and then all the values:
-END {
-  # print the header
-  printf("%s", header[1]);
-  for(i=2;i<=h;i++) 
-    printf("\t%s", header[i]);
-  printf("\n");
-  
-  # cycle over individuals and fields and print em
-  for(j=1;j<=n;j++) {
-    printf("%s", values[j,header[1]]);
-    for(i=2;i<=h;i++) 
-      printf("\t%s", values[j,header[i]]);
-    printf("\n");
-  }
-}
+# Removing header, looking and counting for AA
+grep -v ">" ej_proteina$i.fas > no_header$i.txt
+grep -oE "\w" no_header$i.txt | wc -l >> out_aminoacidos.txt
+done 
+cd ..
 ```
 
-I used to rather dislike the R programming language and felt it was 
-dreadfully slow.  It has gotten a lot better in the last two decades. 
-The introduction of Hadley Wickham's tidy data analysis framework has
-really improved things.
+For sure, I need to excersice my programming skills!
 
 ## What I hope to get out of this class
 
 I hope that I will:
 
-* Help students understand enough about Unix and programming to lessen the pain of learning to do bioinformatics.
-* Be able to advance students' own research.
-* Impart to the students an appreciation of the importance of making research reproducible.
+- Feel more comfortable using the most popular bioinformatic tools as: R, RStudio, git, gitHub, etc.  
+- Learn to make scripts.
+- Learn shortcuts or tricks with practice.  
+- Improve my listening and speaking English skills.
+- Have a lot of fun. 
 
 # Evaluating some R code
 
-I'm going to just simulate one million beta random variables from a $\mathrm{Beta}(2,5)$ distribution
-and plot a histogram of it.
-```{r, message=FALSE}
-library(tidyverse)
+I will visualize environmental space from the geographic distribution of Cinammon Hummingbird *Amazilia rutila* compared to 1000 randon points in Mexico. 
 
-beta_rvs <- tibble(
-  x = rbeta(1e06, shape1 = 2, shape2 = 5)
-)
+```{r, message=FALSE, warning=FALSE}
+library(raster)
+library(dismo)
+library(ggplot2)
 
-ggplot(beta_rvs, aes(x = x)) +
-  geom_histogram(binwidth = 0.01)
+rutila<-read.csv(file="data/rutila.csv", sep = ",", header = T)
+BIOS <- stack(list.files(path="data/", pattern = "*.asc$",full.names = T)) 
+
+rpoints<-randomPoints(BIOS, 10000, rutila, excludep=TRUE, prob=FALSE, 
+	cellnumbers=FALSE, tryf=3, warn=2, lonlatCorrection=TRUE)
+
+# extract values 
+BIOS_val <- extract(BIOS, rpoints)
+rutila_val <- extract(BIOS, rutila[2:3])
+
+# Plots from environmental and geographic space
+BIOS_val <- as.data.frame(BIOS_val)
+rutila_val <- as.data.frame(rutila_val)
+
+plot(BIOS_val, pch=21, bg="gray", xlab = "Temperature", ylab="Precipitation"); 
+points(rutila_val, col="red", pch=21, bg="orange");
+title(main = "Environmental space: Cinnamon Hummingbird")
+
+plot(BIOS[[1]], legend=FALSE, xlab= "lon", ylab= "lat"); 
+points(rpoints, pch=21, bg="gray", cex=.4);
+points(rutila$lon, rutila$lat, col="red", cex=.4, pch=21, bg="orange");
+title(main = "Geographic space: Cinnamon Hummingbird")
 ```
 
-
-# Citations
-
-
+Note: I need to work on figuring out how to manage citations. 

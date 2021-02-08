@@ -3,6 +3,8 @@ output_dir: "docs"
 navbar:
   title: "Caitlin's GitHub Pages"
   left:
+  - text: "Home"
+   href: index.html
   - text: "About me"
    href: caitlin-about-me.html
 output:

@@ -1,5 +1,5 @@
 name: "about me"
-output_dir: "docs"
+output_dir: 
 navbar:
   title: "Caitlin's GitHub Pages"
   left:

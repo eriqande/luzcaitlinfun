@@ -1,6 +1,6 @@
 name: "about me"
-output_dir: 
-navbar:
+output_dir:
+navbar: 
   title: "Caitlin's GitHub Pages"
   left:
   - text: "Home"

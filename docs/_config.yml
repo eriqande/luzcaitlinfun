@@ -1,1 +1,11 @@
+name: "about me"
+output_dir: "docs"
+navbar:
+  title: "Caitlin's GitHub Pages"
+  left:
+  - text: "About me"
+   href: caitlin-about-me.html
+output:
+  html_document:
+
 theme: jekyll-theme-modernist
